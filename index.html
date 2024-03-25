@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <input type="file" id="file" />
+        <script>
+            file.onchange = function (e) {
+                const file = e.target.files[0],
+                    chunks = [],
+                    max = 1024 * 1024 * 100;
+                console.log(file);
+                let index = 0;
+                while (index * max <= file.size) {
+                    chunks.push({
+                        file: file.slice(index * max, (index + 1) * max),
+                        filename: file.name.split('.')[0] + index
+                    });
+                    index++;
+                }
+                console.log(chunks);
+            };
+        </script>
+    </body>
+</html>
