@@ -1,79 +1,26 @@
 export default {
-    title: 'study', //站点标题
-    description: '一个vue3组件库', //mate标签description，多用于搜索引擎抓取摘要
+    title: '一些东西', //站点标题
+    description: '这就是一些东西', //mate标签description，多用于搜索引擎抓取摘要
     themeConfig: {
-        siteTitle: '博客',
+        siteTitle: '',
         logo: '/miao.jpg',
         nav: [
-            { text: '博客', link: '/articles/组件库环境搭建' },
-            { text: 'Guide', link: '/guide/' },
-            { text: 'GuideTest', link: '/guide/test' },
-            { text: 'gitee', link: 'https://gitee.com/geeksdidi' },
-            {
-                text: 'Drop Menu',
-                items: [
-                    { text: 'Item A', link: '/item-1' },
-                    { text: 'Item B', link: '/item-2' },
-                    { text: 'Item C', link: '/item-3' }
-                ]
-            }
+            { text: '前端', link: '/javascript/typescript/ts基础' },
+            { text: 'gitee', link: 'https://gitee.com/half_past_life' }
         ],
-        socialLinks: [
-            { icon: 'github', link: 'https://gitee.com/geeksdidi' },
-            { icon: 'twitter', link: '' },
-            // You can also add custom icons by passing SVG as string:
-            {
-                icon: {
-                    svg: '<svg role="img" viewBox="0 0 24 24" xmlns="SVG namespace"><title>Dribbble</title><path d="M12...6.38z"/></svg>'
-                },
-                link: '...'
-            }
-        ],
+        socialLinks: [{ icon: 'github', link: 'https://github.com/halfpastlife' }],
         sidebar: {
-            '/articles/': [
+            '/javascript/': [
                 {
-                    text: '组件库源码实现',
+                    text: 'typescript',
                     collapsible: true,
                     collapsed: true,
-                    items: [
-                        {
-                            text: '组件库环境搭建',
-                            link: '/articles/组件库环境搭建'
-                        },
-                        { text: 'gulp的使用', link: '/articles/gulp的使用' }
-                    ]
+                    items: [{ text: 'ts基础', link: '/javascript/typescript/ts基础' }]
                 },
-                {
-                    text: 'vue教程',
-                    items: [
-                        {
-                            text: 'pina和vuex',
-                            link: '/articles/pina和vuex'
-                        }
-                    ]
-                }
+                { text: 'vue2', items: [] },
+                { text: 'vue3', items: [] },
+                { text: 'react', items: [] }
             ]
         }
-        // sidebar: [
-        //     {
-        //         text: '组件库源码实现',
-        //         items: [
-        //             {
-        //                 text: '组件库环境搭建',
-        //                 link: '/articles/组件库环境搭建'
-        //             },
-        //             { text: 'gulp的使用', link: '/articles/gulp的使用' }
-        //         ]
-        //     },
-        //     {
-        //         text: 'vue教程',
-        //         items: [
-        //             {
-        //                 text: 'pina和vuex',
-        //                 link: '/articles/pina和vuex'
-        //             }
-        //         ]
-        //     }
-        // ]
     }
 };
