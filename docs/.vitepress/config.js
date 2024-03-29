@@ -21,6 +21,9 @@ export default {
                 { text: 'vue3', items: [] },
                 { text: 'react', items: [] }
             ]
+        },
+        outline: {
+            label: '页面导航'
         }
     }
 };
